@@ -4,7 +4,7 @@ import { setHTML } from "../Utils/Writer.js";
 
 function _drawGetMoolah() {
   let moolah = appState.Moolah
-  console.log('money works', moolah);
+  // console.log('money works', moolah);
   setHTML('Moolah', moolah)
 
 }
@@ -19,5 +19,8 @@ export class MoolahController {
   getMoolah() {
     console.log('moolah')
     moolahService.getMoolah()
+  }
+  buySnacks(snackName) {
+    console.log('buy upgrade')
   }
 }
